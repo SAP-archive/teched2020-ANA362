@@ -1,4 +1,4 @@
-# Session ID - Session Title
+# ANA362 - Designing and Building Applications in SAP Analytics Cloud
 
 ## Description
 
