@@ -15,17 +15,15 @@ This is a hands-on session for beginners and experts alike using the analytics d
 
 ## Exercises
 
-Link to the PDF document stored in your github repo:
+Link to the PDF documents stored in your github repo under the folder exercises:
 
-Start the exercise 1 [here](exercises/myPDFDoc.pdf).
+- You can Start the exercise 1 [here](exercises/ex1/ANA362_EX1.pdf).
+- You can Start the exercise 2 [here](exercises/ex2/ANA362_EX2.pdf).
+- You can Start the exercise 3 [here](exercises/ex3/ANA362_EX3.pdf).
     
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
-
 ## How to obtain support
 
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+Support for the content in this repository is available during the actual time of the online session for which this content has been designed. 
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
