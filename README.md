@@ -15,9 +15,16 @@ This is a hands-on session for beginners and experts alike using the analytics d
 
 ## Exercises
 
-Link to the PDF documents stored in your github repo:
+Link to the PDF documents stored in your github repo under the folder exercises:
 
-- Start the exercise 1 [https://github.com/SAP-samples/teched2020-ANA362/blob/main/exercises/ex1/ANA362_EX1.pdf]
+- You can Start the exercise 1 here: [https://github.com/SAP-samples/teched2020-ANA362/blob/main/exercises/ex1/ANA362_EX1.pdf]
+- You can Start the exercise 2 here: [https://github.com/SAP-samples/teched2020-ANA362/blob/main/exercises/ex2/ANA362_EX2.pdf]
+- You can Start the exercise 3 here: [https://github.com/SAP-samples/teched2020-ANA362/blob/main/exercises/ex3/ANA362_EX3.pdf]
+
+OR 
+
+- You can find all the exercices together in one PDF file here: 
+
     
 **IMPORTANT**
 
