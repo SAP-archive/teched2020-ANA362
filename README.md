@@ -23,7 +23,7 @@ Link to the PDF documents stored in your github repo under the folder exercises:
 
 OR 
 
-- You can find all the exercices together in one PDF file [here](exercises/All Exercices/ANA362.pdf). 
+- You can find all the exercices together in one PDF file [here](exercises/All_Exercices/ANA362.pdf). 
     
 ## How to obtain support
 
