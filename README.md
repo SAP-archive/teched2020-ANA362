@@ -15,9 +15,9 @@ This is a hands-on session for beginners and experts alike using the analytics d
 
 ## Exercises
 
-Link to the PDF document stored in your github repo:
+Link to the PDF documents stored in your github repo:
 
-Start the exercise 1 [here](exercises/myPDFDoc.pdf).
+- Start the exercise 1 [https://github.com/SAP-samples/teched2020-ANA362/blob/main/exercises/ex1/ANA362_EX1.pdf](
     
 **IMPORTANT**
 
