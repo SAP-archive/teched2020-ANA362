@@ -23,7 +23,7 @@ Link to the PDF documents stored in your github repo under the folder exercises:
 
 OR 
 
-- You can find all the exercices together in one PDF file here: 
+- You can find all the exercices together in one PDF file here: [https://github.com/SAP-samples/teched2020-ANA362/blob/main/exercises/All%20Exercices/ANA362.pdf]
 
     
 **IMPORTANT**
@@ -32,7 +32,7 @@ Your repo must contain the .reuse and LICENSES folder and the License section be
 
 ## How to obtain support
 
-Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+Support for the content in this repository is available during the actual time of the online session for which this content has been designed. 
 
 ## License
 Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
