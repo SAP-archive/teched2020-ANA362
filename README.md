@@ -10,8 +10,8 @@ This is a hands-on session for beginners and experts alike using the analytics d
 
 ## Requirements
 
-Login credentials to SAP Analytics Cloud (Handed out at the beginning of the session)
-Chrome browser (Recommended)
+- Login credentials to SAP Analytics Cloud (Handed out at the beginning of the session)
+- Chrome browser (Recommended)
 
 ## Exercises
 
