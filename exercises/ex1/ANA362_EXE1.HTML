@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+        @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            background-color: #222a35;
+        }
+
+        body {
+            padding: 0;
+            font-family: Lato, sans-serif;
+        }
+
+        h3 {
+            font-family: Montserrat, sans-serif;
+        }
+
+        .navigation {
+            display: flex;
+            width: 1440px;
+            margin: 13px 0;
+        }
+
+        figure {
+            overflow: hidden;
+            min-width: 340px;
+            height: 180px;
+            margin: 0 26.7px 0 0;
+            position: relative;
+            box-sizing: content-box;
+            cursor: pointer;
+        }
+
+        figure:hover {
+            box-shadow: 0 0 8px #666;
+            transition: box-shadow 0.3s ease;
+        }
+
+        figure:active {
+            box-shadow: none;
+            padding: 1px 0 0 1px;
+            margin: 0 25.7px -1px 0;
+        }
+
+        figure:last-of-type {
+            margin: 0;
+        }
+
+        figure:last-of-type:hover {
+            margin: 0 0 -1px 0;
+        }
+
+        img {
+            width: 340px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        figcaption {
+            position: absolute;
+            background-color: #235;
+            bottom: 0;
+            font-size: 20px;
+            color: #bbb;
+            mix-blend-mode: hard-light;
+        }
+
+        figcaption h3 {
+            margin: 0;
+            padding: 3px 5px;
+            width: 100%;
+        }
+
+        figure span {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 22px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            text-decoration: line-through;
+        }
+
+        figure span:last-of-type {
+            top: 33px;
+            text-decoration: none;
+            color: red;
+        }
+
+        iframe {
+            border: none;
+        }
+
+        .centered {
+            width: 1440px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centered">
+        <div class="navigation">
+            <figure id="mango">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Mango_in_supermarket_colombia_mb.JPG/320px-Mango_in_supermarket_colombia_mb.JPG">
+                <figcaption>
+                    <h3>Mango Juice</h3>
+                </figcaption>
+                <span></span>
+                <span></span>
+            </figure>
+            <figure id="pineapple">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ananas_comosus_Victoria_P1190459.jpg/320px-Ananas_comosus_Victoria_P1190459.jpg">
+                <figcaption>
+                    <h3>Pineapple Juice</h3>
+                </figcaption>
+                <span></span>
+                <span></span>
+            </figure>
+            <figure id="strawberry">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Erdbeeren-WJP-1.jpg/320px-Erdbeeren-WJP-1.jpg">
+                <figcaption>
+                    <h3>Strawberry Juice</h3>
+                </figcaption>
+                <span></span>
+                <span></span>
+            </figure>
+            <figure id="watermelon">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Watermelons.jpg/320px-Watermelons.jpg">
+                <figcaption>
+                    <h3>Watermelon Juice</h3>
+                </figcaption>
+                <span></span>
+                <span></span>
+            </figure>
+        </div>
+        <iframe style="width: 1440px; height: 1120px;"
+            src="https://experienceacademy.eu10.hanacloudservices.cloud.sap/sap/fpa/ui/app.html#;view_id=appBuilding;appId=6D5BEAFC8AA094E7C1936DBD922AFB8C;mode=view"></iframe>
+    </div>
+
+    <script>
+        document.addEventListener("readystatechange", (ev) => {
+            if (document.readyState === "interactive") {
+                addClickHandler();
+            }
+        });
+
+        function addClickHandler() {
+            document.querySelector("#mango").addEventListener("click", () => {
+                window.frames[0].postMessage('mango', 'https://experienceacademy.eu10.hanacloudservices.cloud.sap');
+            });
+            document.querySelector("#pineapple").addEventListener("click", () => {
+                window.frames[0].postMessage('pineapple', 'https://experienceacademy.eu10.hanacloudservices.cloud.sap');
+            });
+            document.querySelector("#strawberry").addEventListener("click", () => {
+                window.frames[0].postMessage('strawberry', 'https://experienceacademy.eu10.hanacloudservices.cloud.sap');
+            });
+            document.querySelector("#watermelon").addEventListener("click", () => {
+                window.frames[0].postMessage('watermelon', 'https://experienceacademy.eu10.hanacloudservices.cloud.sap');
+            });
+
+            window.addEventListener("message", e => {
+                if (e.data[0] !== "{") return;
+
+
+                const data = JSON.parse(e.data);
+
+                if (data.mango) {
+                    initPrices(data);
+                } else if (data.discount) {
+                    updateDiscount(data);
+                }
+            });
+        }
+
+        function initPrices(data) {
+            window.mango = data.mango;
+            window.strawberry = data.strawberry;
+            window.pineapple = data.pineapple;
+            window.watermelon = data.watermelon;
+
+            ["mango", "strawberry", "pineapple", "watermelon"].forEach(s => {
+                document.querySelectorAll(`#${s} span`)[0].innerHTML = "$ " + Math.round(data[s] / 1000) + "k";
+            });
+
+            updateDiscount(data);
+        }
+
+        function updateDiscount(data) {
+            const multiplier = (100 - data.discount) / 100;
+
+            ["mango", "strawberry", "pineapple", "watermelon"].forEach(s => {
+                document.querySelectorAll(`#${s} span`)[1].innerHTML = "$ " + Math.round((window[s] / 1000) * multiplier) + "k";
+            });
+        }
+    </script>
+</body>
+
+</html>
