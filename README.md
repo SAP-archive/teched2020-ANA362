@@ -1,5 +1,7 @@
 # ANA362 - Designing and Building Applications in SAP Analytics Cloud
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2020-ANA362)](https://api.reuse.software/info/github.com/SAP-samples/teched2020-ANA362)
+
 ## Description
 
 This repository contains the material for the SAP TechEd 2020 session called [ANA362] - Designing and Building Analytic Applications in SAP Analytics Cloud.  
